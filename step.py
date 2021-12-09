@@ -7,7 +7,7 @@ with open("users.html", "r", encoding="utf-8") as html_file:
     html_content = Content("text/html", html_file.read())
     message = Mail(
         from_email='asmachycu15@gmail.com',
-        to_emails='towhidul@cefalo.com',
+        to_emails='asma@cefalo.com',
         subject='SendGrid Test Email',
         html_content=html_content
     )
