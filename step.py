@@ -1,18 +1,26 @@
 import os
+import json
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
-from sendgrid.helpers.mail.content import Content
+from constants.constants import EMAIL_DATA_FILE, FILES_PREFIX, STYLE_FILE
 
-with open("users.html", "r", encoding="utf-8") as html_file:
-    html_content = Content("text/html", html_file.read())
-    message = Mail(
-        from_email='asmachycu15@gmail.com',
-        to_emails='asma@cefalo.com',
-        subject='SendGrid Test Email',
-        html_content=html_content
-    )
+from helpers.html_generator import HtmlGenerator
+from helpers.sendgrid_helper import SendGridHelper
+
+
+with open(FILES_PREFIX+EMAIL_DATA_FILE, "r", encoding="utf-8") as email_data_file:
+    email_data = json.load(email_data_file)
+
+with open(FILES_PREFIX+STYLE_FILE) as style_file:
+    style = json.load(style_file)
+
+html_generator = HtmlGenerator(style)
+sendgrid_helper = SendGridHelper(html_generator=html_generator)
+
+
+if __name__ == '__main__':
     try:
         sendgrid_api_client = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+        message = sendgrid_helper.generate_mail(email_data=email_data)
         response = sendgrid_api_client.send(message)
         print(response.status_code)
         print(response.body)
