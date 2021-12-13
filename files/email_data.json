@@ -1,0 +1,86 @@
+{
+    "employee_name": "Asma Chowdhury",
+    "from_email": "asmachycu15@gmail.com",
+    "subject": "Dynamic Subject",
+    "customer_list": [
+        {
+            "name": "Asma Ul Husna Chowdhury",
+            "email": "asma@cefalo.com",
+            "product_list": [
+                {
+                    "id": 1,
+                    "name": "product1",
+                    "price": "10$"
+                },
+                {
+                    "id": 2,
+                    "name": "product2",
+                    "price": "0.5$"
+                },
+                {
+                    "id": 3,
+                    "name": "product3",
+                    "price": "6$"
+                },
+                {
+                    "id": 4,
+                    "name": "product4",
+                    "price": "102$"
+                }
+            ]
+        },
+        {
+            "name": "Shihab Rahman",
+            "email": "shihab@cefalo.com",
+            "product_list": [
+                {
+                    "id": 1,
+                    "name": "product1",
+                    "price": "65$"
+                },
+                {
+                    "id": 2,
+                    "name": "product2",
+                    "price": "0.5$"
+                }
+            ]
+        },
+        {
+            "name": "Towhidul Islam",
+            "email": "towhidul@cefalo.com",
+            "product_list": [
+                {
+                    "id": 1,
+                    "name": "product1",
+                    "price": "10$"
+                },
+                {
+                    "id": 2,
+                    "name": "product2",
+                    "price": "0.5$"
+                },
+                {
+                    "id": 3,
+                    "name": "product3",
+                    "price": "6$"
+                }
+            ]
+        },
+        {
+            "name": "Sadia Jahan",
+            "email": "borna9sadia@gmail.com",
+            "product_list": [
+                {
+                    "id": 1,
+                    "name": "product1",
+                    "price": "105$"
+                },
+                {
+                    "id": 2,
+                    "name": "product2",
+                    "price": "0.5$"
+                }
+            ]
+        }
+    ]
+}
