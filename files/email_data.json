@@ -1,11 +1,11 @@
 {
-    "employee_name": "Asma Chowdhury",
-    "from_email": "asmachycu15@gmail.com",
+    "employee_name": "Jon Doe",
+    "from_email": "monika@example.com",
     "subject": "Dynamic Subject",
     "customer_list": [
         {
-            "name": "Asma Ul Husna Chowdhury",
-            "email": "asma@cefalo.com",
+            "name": "Chandler M. Being",
+            "email": "Chandler@example.com",
             "product_list": [
                 {
                     "id": 1,
@@ -30,8 +30,8 @@
             ]
         },
         {
-            "name": "Shihab Rahman",
-            "email": "shihab@cefalo.com",
+            "name": "Ross Geller",
+            "email": "ross@example.com",
             "product_list": [
                 {
                     "id": 1,
@@ -46,8 +46,8 @@
             ]
         },
         {
-            "name": "Towhidul Islam",
-            "email": "towhidul@cefalo.com",
+            "name": "Pheobe Buffay",
+            "email": "pheobe@example.com",
             "product_list": [
                 {
                     "id": 1,
@@ -67,8 +67,8 @@
             ]
         },
         {
-            "name": "Sadia Jahan",
-            "email": "borna9sadia@gmail.com",
+            "name": "Joey Tribiani",
+            "email": "joey@example.com",
             "product_list": [
                 {
                     "id": 1,
